@@ -335,7 +335,7 @@ export default class Sketch extends THREE.Scene {
 
     /** resize renderer */
     this.renderer.setSize(width, height);
-    this.renderer.setPixelRatio(0.9);
+    this.renderer.setPixelRatio(1);
     this.CSS2DRenderer.setSize(width, height);
   };
 
