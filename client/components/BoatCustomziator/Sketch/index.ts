@@ -178,14 +178,14 @@ export default class Sketch extends THREE.Scene {
  
     loader.on( 'progress', function ( event ) {
      
-      console.log( 'loading', event.loaded, event.total );
+      //console.log( 'loading', event.loaded, event.total );
      
     } );
      
     loader.on( 'load', ( event ) => {
      
-      console.log( 'loaded!' );
-      console.log( loader.files );
+      //console.log( 'loaded!' );
+     // console.log( loader.files );
       var LoadingManager = new THREE.LoadingManager();
       var GLTFLoaderr = new GLTFLoader(LoadingManager);
       GLTFLoaderr.parse(loader.files["boat.glb"].buffer.buffer ,'', (gltf) =>{
